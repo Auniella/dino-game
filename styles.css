@@ -35,13 +35,13 @@ body {
 
 #message {
     position: absolute;
-    left: 17rem;
+    left: 16rem;
     top: 3rem;
     border-radius: 0.3rem;
-    background-color: #ff0101;
+    background-color: rgba(255, 1, 1, 0.927);
     padding: 1rem;
     font-size: 1.7rem;
-    width: 16.2rem;
+    width: 19rem;
     opacity: 0;
 }
 
@@ -105,7 +105,7 @@ img {
     }
 
     100% {
-        left: -15rem;
+        left: -6rem;
     }
 }
 

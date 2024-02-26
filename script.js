@@ -40,7 +40,7 @@ function verification() {
       window.getComputedStyle(obstacle).getPropertyValue("left")
     );
 
-    if (hommeTop >= 9.5 && obstacleLeft <= 3.5) {
+    if (obstacleLeft < 2 && obstacleLeft > 0 && hommeTop >= 7) {
       obstacle.style.animation = "none";
       message.style.opacity = "1";
     }
