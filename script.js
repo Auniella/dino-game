@@ -31,7 +31,6 @@ window.onload = function () {
 
 function verification() {
   obstacle.classList.add("roule");
-  isJumping ? (sauter.disabled = true) : (sauter.disabled = false);
   setInterval(() => {
     let hommeTop = parseInt(
       window.getComputedStyle(homme).getPropertyValue("top")
@@ -40,7 +39,7 @@ function verification() {
       window.getComputedStyle(obstacle).getPropertyValue("left")
     );
 
-    if (obstacleLeft < 20 && obstacleLeft > 0 && hommeTop >= 90) {
+    if (obstacleLeft < 40 && obstacleLeft > 20 && hommeTop >= 91) {
       obstacle.style.animation = "none";
       message.style.opacity = "1";
     }
