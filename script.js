@@ -18,13 +18,39 @@ window.onload = function () {
     }, 600);
   });
 
+  //Flèche vers le haut pour Sauter
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowUp") {
+      if (homme.classList != "saut") {
+        homme.classList.add("saut");
+      }
+
+      setTimeout(() => {
+        homme.classList.remove("saut");
+      }, 600);
+    }
+  });
+
   start.addEventListener("click", () => {
     verification();
-    increaseScore();
+  });
+
+  //touche Espace pour Start
+  document.addEventListener("keydown", function (event) {
+    if (event.key === " ") {
+      verification();
+    }
   });
 
   restart.addEventListener("click", function () {
     location.reload();
+  });
+
+  //touche Entrer pour Restart
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      location.reload();
+    }
   });
 };
 
