@@ -34,13 +34,13 @@ function verification() {
   isJumping ? (sauter.disabled = true) : (sauter.disabled = false);
   setInterval(() => {
     let hommeTop = parseInt(
-      window.getComputedStyle(perso).getPropertyValue("top")
+      window.getComputedStyle(homme).getPropertyValue("top")
     );
     let obstacleLeft = parseInt(
       window.getComputedStyle(obstacle).getPropertyValue("left")
     );
 
-    if (obstacleLeft < 2 && obstacleLeft > 0 && hommeTop >= 7) {
+    if (obstacleLeft < 20 && obstacleLeft > 0 && hommeTop >= 90) {
       obstacle.style.animation = "none";
       message.style.opacity = "1";
     }
